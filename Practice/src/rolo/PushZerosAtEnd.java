@@ -7,7 +7,7 @@ import java.time.format.DateTimeFormatter;
 import java.time.temporal.ChronoField;
 import java.util.Arrays;
 
-public class Demo {
+public class PushZerosAtEnd {
 	public static void main(String[] args) throws Exception {
 		int[] ans=pushZeros(new int[] {9,0,0,8,0,3});
 		System.out.println(Arrays.toString(ans));
