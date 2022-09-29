@@ -8,7 +8,7 @@ public class Sort012 {
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 		sort012(new int[] {1,1,2,2,0,0});
-		sort012_(new int[] {1,1,2,2,0,0});
+		sort012_(new int[] {2,0,2,1,1,0});
 	}
 	
 	public static void sort012(int[] nums) {
@@ -44,6 +44,7 @@ public class Sort012 {
 			}else if(nums[mid]==0) {
 				swap(nums,mid,min);
 				min++;
+				mid++;
 			}else {
 				mid++;
 			}
