@@ -10,27 +10,28 @@ public class ReturnK_RotatedArray {
 		System.out.println(checkRotation(new int[] {5 ,6 ,7 ,8 ,9 ,10})+1);
 	}
 	
-	public static int checkRotation(int[]arr) {
+public static int checkRotation(int[]arr) {
 		
 		int min =0;
 		int max= arr.length-1;
 		
-		while(min<max) {
+		while(min<=max) {
 			int mid=min+(max-min)/2;
 			
 			if(mid<arr.length-1 && arr[mid]>arr[mid+1]) return mid;
 			
-			if(arr[mid]>arr[max]) {
+			if(arr[mid]>arr[min]) {
 				min=mid+1;
-			}
-			
-			if(arr[mid]<arr[min]) {
+				
+			}else {
 				max=mid-1;
 			}
 			
 		}
-		if(max==arr.length-1) return -1;
-		return max;
+		
+		if(min==arr.length-1) return -1;
+		
+		return min;
 		
 	}
 
