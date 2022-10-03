@@ -1,3 +1,4 @@
+package arraySerchingSorting;
 
 //
 //You have been given an integer array/list(ARR) of size N. It has been sorted(in increasing order) and then rotated by some number 'K' in the right hand direction.
@@ -9,6 +10,7 @@ public class ReturnK_RotatedArray {
 		// TODO Auto-generated method stub
 		System.out.println(checkRotation(new int[] {12 ,17 ,1 ,3 ,6 ,11}));
 		System.out.println(checkRotation(new int[] {1,2,3,4,5,6,7}));
+		System.out.println(checkRotation(new int[] {4,5,6,7,1,2,3}));
 	}
 	
 public static int checkRotation(int[]arr) {

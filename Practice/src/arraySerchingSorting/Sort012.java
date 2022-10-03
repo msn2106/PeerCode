@@ -1,3 +1,4 @@
+package arraySerchingSorting;
 import java.util.Arrays;
 //Sort 0 1 2
 //Send Feedback
